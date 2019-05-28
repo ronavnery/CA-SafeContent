@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Safe Content</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body onload=init()>
+    <div class="main-container">
+        <div class="greeting"></div>
+        <button class="logout" onclick="onDoLogout()">Sign-out</button>
+        <button class="goto-admin" onclick="location.href='admin.html';">Admin Panel</button>
+        <div class="login-container wrong-password">
+            Sign-in
+            <input class="username-input" type="text" placeholder="username">
+            <input class="password-input" type="text" placeholder="passowrd">
+            <button onclick="onDoLogin()">Sign-in</button>
+        </div>
+        <div class="secret-container">
+            This is a secret
+        </div>
+    </div>
+    <script src="js/safe-controller.js"></script>
+    <script src="js/safe-service.js"></script>
+</body>
+</html>
